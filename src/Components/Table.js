@@ -1,9 +1,10 @@
 import React from 'react';
 import Row from './Rows';
+import '../Styles/Table.scss';
 
 export default function Table() {
   return (
-    <div>
+    <div className="Table">
       <table>
         <tr>
           <th>Description</th>
