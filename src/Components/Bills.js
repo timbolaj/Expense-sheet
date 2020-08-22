@@ -1,10 +1,11 @@
 import React from 'react';
 import Row from './Rows';
+import '../Styles/Bills.scss';
 
 export default function Bills() {
   return (
-    <div>
-      <h3>Bills</h3>
+    <div className="Bills">
+      <h3>Fixed Bills</h3>
       <table>
         <tr>
           <th>Description</th>
@@ -23,6 +24,11 @@ export default function Bills() {
 
         <tr>
           <td>Cellphone</td>
+          <Row />
+        </tr>
+
+        <tr>
+          <td>Total</td>
           <Row />
         </tr>
 
