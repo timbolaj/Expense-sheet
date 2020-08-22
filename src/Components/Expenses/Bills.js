@@ -32,6 +32,11 @@ export default function Bills() {
         </tr>
 
         <tr>
+          <td>Insurance</td>
+          <Row />
+        </tr>
+
+        <tr>
           <td>Total:</td>
           <Row />
         </tr>
