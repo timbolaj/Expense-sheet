@@ -28,7 +28,12 @@ export default function Bills() {
         </tr>
 
         <tr>
-          <td>Total</td>
+          <td>Donation</td>
+          <Row />
+        </tr>
+
+        <tr>
+          <td>Total:</td>
           <Row />
         </tr>
 
