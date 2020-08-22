@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Bills from './Components/Bills';
-import Fluctuates from './Components/Fluctuates';
+import Expenses from './Components/Expenses/Expenses';
 
 function App() {
   return (
     <div className="App">
-      <Bills />
-      <Fluctuates />
+      <Expenses />
     </div>
   );
 }

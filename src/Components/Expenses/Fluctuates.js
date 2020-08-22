@@ -1,11 +1,10 @@
 import React from 'react';
-import Row from './Rows';
-import '../Styles/Bills.scss';
+import Row from '../Rows';
 
-export default function Bills() {
+export default function Fluctuates() {
   return (
-    <div className="Bills">
-      <h3>Fixed Bills</h3>
+    <div className="Fluctuates">
+      <h3>Fluctuates</h3>
       <table>
         <tr>
           <th>Description</th>
@@ -13,22 +12,32 @@ export default function Bills() {
         </tr>
 
         <tr>
-          <td>Rent</td>
+          <td>Electricity</td>
           <Row />
         </tr>
 
         <tr>
-          <td>Internet</td>
+          <td>Food</td>
           <Row />
         </tr>
 
         <tr>
-          <td>Cellphone</td>
+          <td>Social</td>
           <Row />
         </tr>
 
         <tr>
-          <td>Donation</td>
+          <td>Household needs</td>
+          <Row />
+        </tr>
+
+        <tr>
+          <td>Transportation</td>
+          <Row />
+        </tr>
+
+        <tr>
+          <td>Other</td>
           <Row />
         </tr>
 
