@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Row from '../Rows';
 
 export default function Bills() {
+
+  const [total, setTotal] = useState(Number(0));
+
   return (
     <div className="Bills">
       <h3>Fixed</h3>
@@ -13,32 +16,35 @@ export default function Bills() {
 
         <tr>
           <td>Rent</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Internet</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Cellphone</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Donation</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Insurance</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Total:</td>
-          <Row />
+          <textarea
+              className="total"
+              value={total}>
+          </textarea>
         </tr>
 
       </table>

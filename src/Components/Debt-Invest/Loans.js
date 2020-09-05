@@ -24,7 +24,10 @@ export default function Loans() {
         <tr>
           <td>Total:</td>
           <td>
-            <textarea value={total}></textarea>
+            <textarea
+              className="total"
+              value={total}>
+            </textarea>
           </td>
         </tr>
       </table>

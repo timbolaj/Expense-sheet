@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Row from '../Rows';
 
 export default function Investments() {
+
+  const [total, setTotal] = useState(Number(0));
+
   return (
     <div>
       <h2>Investments</h2>
@@ -13,17 +16,20 @@ export default function Investments() {
 
         <tr>
           <td>Short-term</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Long-term</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Total:</td>
-          <Row />
+          <textarea
+              className="total"
+              value={total}>
+          </textarea>
         </tr>
       </table>
     

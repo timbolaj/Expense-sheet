@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Row from '../Rows';
 
 export default function Fluctuates() {
+
+  const [total, setTotal] = useState(0);
+
   return (
     <div className="Fluctuates">
       <h3>Fluctuates</h3>
@@ -13,37 +16,40 @@ export default function Fluctuates() {
 
         <tr>
           <td>Electricity</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Food</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Social</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Household needs</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Transportation</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Other</td>
-          <Row />
+          <Row onChange={setTotal} total={total}/>
         </tr>
 
         <tr>
           <td>Total:</td>
-          <Row />
+          <textarea
+              className="total"
+              value={total}>
+          </textarea>
         </tr>
 
       </table>
