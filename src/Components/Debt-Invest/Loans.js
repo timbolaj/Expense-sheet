@@ -18,6 +18,10 @@ export default function Loans() {
           <td>Personal</td>
           <Row />
         </tr>
+        <tr>
+          <td>Total:</td>
+          <Row />
+        </tr>
       </table>
     </div>
   )

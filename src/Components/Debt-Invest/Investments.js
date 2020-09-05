@@ -20,6 +20,11 @@ export default function Investments() {
           <td>Long-term</td>
           <Row />
         </tr>
+
+        <tr>
+          <td>Total:</td>
+          <Row />
+        </tr>
       </table>
     
     </div>

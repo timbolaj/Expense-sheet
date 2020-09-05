@@ -1,6 +1,13 @@
 .App {
   display: flex;
   text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+div h1 {
+  display: flex;
   justify-content: center;
 }
 

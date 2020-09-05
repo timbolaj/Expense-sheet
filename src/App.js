@@ -5,9 +5,12 @@ import DebtInvest from './Components/Debt-Invest/Debt-invest';
 
 function App() {
   return (
-    <div className="App">
-      <Expenses />
-      <DebtInvest />
+    <div>
+      <h1>Expense Sheet</h1>
+      <div className="App">
+        <Expenses />
+        <DebtInvest />        
+      </div>
     </div>
   );
 }
