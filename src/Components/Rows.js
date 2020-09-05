@@ -11,7 +11,6 @@ export default function Row(props) {
     let newTotal = total - value + Number(event.target.value);
     setValue(event.target.value)
     onChange(newTotal);
-    console.log(newTotal)
   }
 
   return (

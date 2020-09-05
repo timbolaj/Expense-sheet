@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Row from '../Rows';
+import handleChange from '../../Helpers/handleChange';
+import getTotal from '../../Helpers/getTotal';
 
-export default function Investments() {
+export default function Investments(props) {
 
   const [total, setTotal] = useState(Number(0));
 
@@ -16,12 +18,16 @@ export default function Investments() {
 
         <tr>
           <td>Short-term</td>
-          <Row onChange={setTotal} total={total}/>
+          <Row
+            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            total={total} />
         </tr>
 
         <tr>
           <td>Long-term</td>
-          <Row onChange={setTotal} total={total}/>
+          <Row
+            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            total={total} />
         </tr>
 
         <tr>
