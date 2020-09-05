@@ -9,8 +9,8 @@ export default function Expenses(props) {
       <h2>Expenses</h2>
 
       <div className="Expenses">
-        <Bills newTotal={props.newTotal}/>
-        <Fluctuates newTotal={props.newTotal}/>        
+        <Bills setTotal={props.setTotal}/>
+        <Fluctuates setTotal={props.setTotal}/>        
       </div>
     </div>
   )

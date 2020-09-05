@@ -6,14 +6,14 @@ import TotalExpenditure from './Components/Total-Expenditures';
 
 function App() {
 
-  const [total, newTotal] = useState(Number(0));
+  const [total, setTotal] = useState(Number(0));
 
   return (
     <div>
       <h1>Expense Sheet</h1>
       <div className="App">
-        <Expenses newTotal={newTotal}/>
-        <DebtInvest newTotal={newTotal}/>
+        <Expenses setTotal={setTotal}/>
+        <DebtInvest setTotal={setTotal}/>
       </div>
       <TotalExpenditure total={total} />
     </div>

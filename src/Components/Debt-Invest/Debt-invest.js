@@ -8,8 +8,8 @@ export default function DebtInvest(props) {
     <div>
       <h2>Debt-Invest</h2>
       <div className="debt-invest">
-        <Loans newTotal={props.newTotal}/>
-        <Investments newTotal={props.newTotal}/>        
+        <Loans setTotal={props.setTotal}/>
+        <Investments setTotal={props.setTotal}/>        
       </div>
 
     </div>

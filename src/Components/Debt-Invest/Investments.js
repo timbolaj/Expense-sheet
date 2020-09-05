@@ -5,7 +5,7 @@ import getTotal from '../../Helpers/getTotal';
 
 export default function Investments(props) {
 
-  const [total, setTotal] = useState(Number(0));
+  const [total, setLocalTotal] = useState(Number(0));
 
   return (
     <div>
@@ -19,14 +19,14 @@ export default function Investments(props) {
         <tr>
           <td>Short-term</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Long-term</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 

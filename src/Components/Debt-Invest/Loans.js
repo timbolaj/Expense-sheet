@@ -5,7 +5,7 @@ import getTotal from '../../Helpers/getTotal';
 
 export default function Loans(props) {
 
-  const [total, setTotal] = useState(Number(0));
+  const [total, setLocalTotal] = useState(Number(0));
 
   return (
     <div>
@@ -18,13 +18,13 @@ export default function Loans(props) {
         <tr>
           <td>Government</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
         <tr>
           <td>Personal</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
         <tr>

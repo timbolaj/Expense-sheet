@@ -5,7 +5,7 @@ import getTotal from '../../Helpers/getTotal';
 
 export default function Fluctuates(props) {
 
-  const [total, setTotal] = useState(Number(0));
+  const [total, setLocalTotal] = useState(Number(0));
 
   return (
     <div className="Fluctuates">
@@ -19,42 +19,42 @@ export default function Fluctuates(props) {
         <tr>
           <td>Electricity</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Food</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Social</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Household needs</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Transportation</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Other</td>
           <Row
-            onChange={(val) => handleChange(props.newTotal, setTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
             total={total} />
         </tr>
 

@@ -8,9 +8,9 @@ export default function Row(props) {
   const [value, setValue] = useState(Number(0));
 
   const handleChange = event => {
-    let newTotal = total - value + Number(event.target.value);
+    let setTotal = total - value + Number(event.target.value);
     setValue(event.target.value)
-    onChange(newTotal);
+    onChange(setTotal);
   }
 
   return (

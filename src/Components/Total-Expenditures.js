@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function TotalExpenditure() {
+export default function TotalExpenditure(props) {
 
   return (
     <div className="totalExpenditure">
-      <p></p>
+      {props.total}
     </div>
   )
 }
