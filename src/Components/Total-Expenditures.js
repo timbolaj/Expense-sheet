@@ -1,10 +1,11 @@
 import React from 'react';
+import '../Styles/Total-Expenditures.scss';
 
 export default function TotalExpenditure(props) {
 
   return (
-    <div className="totalExpenditure">
-      {props.total}
+    <div className="TotalExpenditure">
+      Your total expenses are: {props.total}
     </div>
   )
 }

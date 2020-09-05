@@ -11,7 +11,6 @@ export default function DebtInvest(props) {
         <Loans setTotal={props.setTotal}/>
         <Investments setTotal={props.setTotal}/>        
       </div>
-
     </div>
   )
 }

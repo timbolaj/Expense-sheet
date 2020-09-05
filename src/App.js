@@ -9,9 +9,9 @@ function App() {
   const [total, setTotal] = useState(Number(0));
 
   return (
-    <div>
+    <div className="app">
       <h1>Expense Sheet</h1>
-      <div className="App">
+      <div className="inputs">
         <Expenses setTotal={setTotal}/>
         <DebtInvest setTotal={setTotal}/>
       </div>
