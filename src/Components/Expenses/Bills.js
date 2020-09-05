@@ -42,6 +42,7 @@ export default function Bills() {
         <tr>
           <td>Total:</td>
           <textarea
+              id="bills-total"
               className="total"
               value={total}>
           </textarea>

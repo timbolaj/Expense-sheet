@@ -47,6 +47,7 @@ export default function Fluctuates() {
         <tr>
           <td>Total:</td>
           <textarea
+              id="fluctuates-total"
               className="total"
               value={total}>
           </textarea>

@@ -25,6 +25,7 @@ export default function Loans() {
           <td>Total:</td>
           <td>
             <textarea
+              id="loan-total"
               className="total"
               value={total}>
             </textarea>
