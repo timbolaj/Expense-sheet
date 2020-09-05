@@ -6,6 +6,5 @@ export default function getTotal(setLocalTotal) {
     const loans = document.getElementById('loan-total').value;
     const setTotal = Number(bills) + Number(fluctuates) + Number(investment) + Number(loans);
     setLocalTotal(setTotal);
-    console.log(setTotal)
   }, 100)
 }
