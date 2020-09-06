@@ -1,5 +1,10 @@
 .TotalExpenditure {
   display: flex;
+  flex-direction: column;
   padding-top: 2em;
   width: 90%;
+}
+
+.TotalExpenditure p {
+  margin-bottom: 0em;
 }

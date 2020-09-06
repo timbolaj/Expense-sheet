@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Row from '../Rows';
 import handleChange from '../../Helpers/handleChange'
-import getTotal from '../../Helpers/getTotal';
 
 export default function Bills(props) {
 
@@ -19,35 +18,35 @@ export default function Bills(props) {
         <tr>
           <td>Rent</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Internet</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Cellphone</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Donation</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Insurance</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 

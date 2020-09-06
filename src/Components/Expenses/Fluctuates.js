@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Row from '../Rows';
 import handleChange from '../../Helpers/handleChange';
-import getTotal from '../../Helpers/getTotal';
 
 export default function Fluctuates(props) {
 
@@ -19,42 +18,42 @@ export default function Fluctuates(props) {
         <tr>
           <td>Electricity</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Food</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Social</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Household needs</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Transportation</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Other</td>
           <Row
-            onChange={(val) => handleChange(props.setTotal, setLocalTotal, getTotal, val)}
+            onChange={(val) => handleChange(props.setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
