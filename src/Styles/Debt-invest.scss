@@ -5,7 +5,20 @@ h2 {
 .debt-invest {
   display: flex;
   border: solid;
-  width: 100%;
+  width: auto;
   background-color: whitesmoke;
   padding-bottom: 1em;
+  margin-left: 0em;
+}
+
+@media screen and (min-width: 1300px) {
+  .debt-invest {
+    width: 100%
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .debt-invest {
+    margin-left: 1em;
+  }
 }

@@ -9,6 +9,7 @@
 
 .inputs {
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-content: center;
   justify-content: space-evenly;
@@ -27,4 +28,10 @@ table {
 .total {
   width: 60%;
   resize: none;
+}
+
+@media screen and (min-width: 780px) {
+  .inputs {
+    flex-direction: row;
+  }
 }
