@@ -1,7 +1,3 @@
-const payMinusExpense = () => {
-
-}
-
 function getTotal(setLocalTotal) {
   setTimeout(() => {
     const bills = document.getElementById('bills-total').value;
@@ -13,7 +9,8 @@ function getTotal(setLocalTotal) {
   }, 100)
 }
 
-export default function handleChange(setTotal, setLocalTotal, val) {
-  setLocalTotal(val);
+export default function handleChange(setTotal, setLocalTotal, expense, profit, setProfit) {
+  setLocalTotal(expense);
   getTotal(setTotal);
+  setProfit(profit - expense);
 }

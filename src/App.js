@@ -8,15 +8,27 @@ import TotalExpenditure from './Components/Total-Expenditures';
 function App() {
 
   const [total, setTotal] = useState(Number(0));
+  const [profit, setProfit] = useState(Number(0));
 
   return (
     <div className="app">
       <Nav />
       <div className="inputs">
-        <Expenses setTotal={setTotal}/>
-        <DebtInvest setTotal={setTotal}/>
+        <Expenses
+          setTotal={setTotal}
+          setProfit={setProfit}
+          profit={profit}
+        />
+        <DebtInvest
+          setTotal={setTotal}
+          setProfit={setProfit}
+          profit={profit}
+        />
       </div>
-      <TotalExpenditure total={total} />
+      <TotalExpenditure
+        total={total}
+        profit={profit}
+        setProfit={setProfit} />
     </div>
   );
 }
