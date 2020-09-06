@@ -9,7 +9,7 @@ export default function Bills(props) {
 
   return (
     <div className="Bills">
-      <h3>Fixed</h3>
+      <h2>Fixed</h2>
       <table>
         <tr>
           <th>Description</th>

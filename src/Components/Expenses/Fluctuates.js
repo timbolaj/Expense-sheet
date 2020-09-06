@@ -9,7 +9,7 @@ export default function Fluctuates(props) {
 
   return (
     <div className="Fluctuates">
-      <h3>Fluctuates</h3>
+      <h2>Fluctuates</h2>
       <table>
         <tr>
           <th>Description</th>
