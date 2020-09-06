@@ -7,3 +7,7 @@ A web app that allows a user to calculate their expenses for their chosen time p
 Fork and clone this repository.
 Run 'npm install'
 
+## Dependencies
+
+* React 16v^
+* Sass 4.14^
