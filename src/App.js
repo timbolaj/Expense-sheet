@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.scss';
+import Nav from './Components/Nav';
 import Expenses from './Components/Expenses/Expenses';
 import DebtInvest from './Components/Debt-Invest/Debt-invest';
 import TotalExpenditure from './Components/Total-Expenditures';
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Expense Sheet</h1>
+      <Nav />
       <div className="inputs">
         <Expenses setTotal={setTotal}/>
         <DebtInvest setTotal={setTotal}/>
