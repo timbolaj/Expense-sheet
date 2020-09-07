@@ -3,7 +3,7 @@ import '../Styles/Total-Expenditures.scss';
 
 export default function TotalExpenditure(props) {
 
-  const { total, profit, setProfit } = props;
+  const { totalExpense, profit, setProfit } = props;
   let income = Number(0);
 
   const changeIncome = event => {
@@ -11,12 +11,12 @@ export default function TotalExpenditure(props) {
       return;
     }
     income = Number(event.target.value);
-    setProfit(income - total);
+    setProfit(income - totalExpense);
   };
 
   return (
     <div className="TotalExpenditure">
-      <p>Your total expenses are: {total}</p>
+      <p>Your total expenses are: {totalExpense}</p>
         <span className="income-field">
           <p>Enter your income: &nbsp; </p>
           <textarea id="income" onChange={changeIncome}></textarea>          

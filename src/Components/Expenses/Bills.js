@@ -5,7 +5,7 @@ import handleChange from '../../Helpers/handleChange'
 export default function Bills(props) {
 
   const [total, setLocalTotal] = useState(Number(0));
-  const { setTotal, setProfit } = props;
+  const { setTotal, setProfit, totalExpense} = props;
 
   return (
     <div className="Bills">
@@ -19,24 +19,21 @@ export default function Bills(props) {
         <tr>
           <td>Rent</td>
           <Row
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, totalExpense)}
             total={total} />
         </tr>
 
         <tr>
           <td>Internet</td>
           <Row
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, totalExpense)}
             total={total} />
         </tr>
 
         <tr>
           <td>Cellphone</td>
           <Row
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, totalExpense)}
             total={total} />
         </tr>
 
@@ -44,15 +41,15 @@ export default function Bills(props) {
           <td>Donation</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, totalExpense)}
             total={total} />
         </tr>
 
         <tr>
           <td>Insurance</td>
           <Row
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, totalExpense)}
             total={total} />
         </tr>
 

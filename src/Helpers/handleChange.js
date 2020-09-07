@@ -1,20 +1,20 @@
-function getTotal(setLocalTotal) {
+function getTotal(setTotal, setProfit, income) {
   setTimeout(() => {
     const bills = document.getElementById('bills-total').value;
     const fluctuates = document.getElementById('fluctuates-total').value;
     const investment = document.getElementById('investment-total').value;
     const loans = document.getElementById('loan-total').value;
-    const setTotal = Number(bills) + Number(fluctuates) + Number(investment) + Number(loans);
-    setLocalTotal(setTotal);
+    const total = Number(bills) + Number(fluctuates) + Number(investment) + Number(loans);
+    setTotal(total);
+    setProfit(income - total);
   }, 100)
 }
 
-export default function handleChange(setTotal, setLocalTotal, expense, setProfit) {
-  setLocalTotal(expense);
-  getTotal(setTotal);
+export default function handleChange(setTotal, setLocalTotal, expense, setProfit, totalExpense) {
   let income = document.getElementById('income').value;
   if (!income) {
     income = 0;
   }
-  setProfit(income - expense);
+  setLocalTotal(expense);
+  getTotal(setTotal, setProfit, income);
 }

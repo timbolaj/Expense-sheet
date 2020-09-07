@@ -7,7 +7,7 @@ import TotalExpenditure from './Components/Total-Expenditures';
 
 function App() {
 
-  const [total, setTotal] = useState(Number(0));
+  const [totalExpense, setTotal] = useState(Number(0));
   const [profit, setProfit] = useState(Number(0));
 
   return (
@@ -17,14 +17,14 @@ function App() {
         <Expenses
           setTotal={setTotal}
           setProfit={setProfit}
-        />
+          totalExpense={totalExpense} />
         <DebtInvest
           setTotal={setTotal}
           setProfit={setProfit}
-        />
+          totalExpense={totalExpense} />
       </div>
       <TotalExpenditure
-        total={total}
+        totalExpense={totalExpense}
         setProfit={setProfit}
         profit={profit}
       />

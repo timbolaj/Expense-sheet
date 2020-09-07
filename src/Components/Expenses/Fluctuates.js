@@ -20,7 +20,8 @@ export default function Fluctuates(props) {
           <td>Electricity</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -28,7 +29,8 @@ export default function Fluctuates(props) {
           <td>Food</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -36,7 +38,8 @@ export default function Fluctuates(props) {
           <td>Social</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -44,7 +47,8 @@ export default function Fluctuates(props) {
           <td>Household needs</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -52,7 +56,8 @@ export default function Fluctuates(props) {
           <td>Transportation</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -60,7 +65,8 @@ export default function Fluctuates(props) {
           <td>Other</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 

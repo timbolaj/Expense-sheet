@@ -19,7 +19,8 @@ export default function Investments(props) {
         <tr>
           <td>Short-term</td>
           <Row
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
@@ -27,7 +28,8 @@ export default function Investments(props) {
           <td>Long-term</td>
           <Row
 
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
             total={total} />
         </tr>
 
