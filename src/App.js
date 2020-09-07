@@ -17,21 +17,17 @@ function App() {
         <Expenses
           setTotal={setTotal}
           setProfit={setProfit}
-          
-
         />
         <DebtInvest
           setTotal={setTotal}
           setProfit={setProfit}
-          
-
         />
       </div>
       <TotalExpenditure
         total={total}
-        
-
-        setProfit={setProfit} />
+        setProfit={setProfit}
+        profit={profit}
+      />
     </div>
   );
 }

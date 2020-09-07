@@ -11,10 +11,8 @@ export default function DebtInvest(props) {
     <div>
       <h2>Debts/Investment</h2>
       <div className="debt-invest">
-        <Loans setTotal={setTotal} setProfit={setProfit} 
-/>
-        <Investments setTotal={setTotal} setProfit={setProfit} 
-/>        
+        <Loans setTotal={setTotal} setProfit={setProfit} />
+        <Investments setTotal={setTotal} setProfit={setProfit} />        
       </div>
     </div>
   )

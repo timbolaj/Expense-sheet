@@ -18,13 +18,15 @@ export default function Loans(props) {
         <tr>
           <td>Government</td>
           <Row
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
             total={total} />
         </tr>
         <tr>
           <td>Personal</td>
           <Row
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val)}
+
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
             total={total} />
         </tr>
         <tr>
