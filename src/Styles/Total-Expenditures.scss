@@ -8,3 +8,14 @@
 .TotalExpenditure p {
   margin-bottom: 0em;
 }
+
+.income-field {
+  display: flex;
+}
+
+#income {
+  align-self: flex-end;
+  resize: none;
+  vertical-align: baseline;
+  height: 18px;
+}

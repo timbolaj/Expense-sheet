@@ -17,9 +17,10 @@ export default function TotalExpenditure(props) {
   return (
     <div className="TotalExpenditure">
       <p>Your total expenses are: {total}</p>
-      <div>
-        <p>Enter your income: &nbsp; <textarea id="income" onChange={changeIncome}></textarea></p>
-      </div>
+        <span className="income-field">
+          <p>Enter your income: &nbsp; </p>
+          <textarea id="income" onChange={changeIncome}></textarea>          
+        </span>
       <p>Your pay minus your expenses are: {profit}</p>
     </div>
   )
