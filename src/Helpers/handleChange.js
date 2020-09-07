@@ -9,8 +9,8 @@ function getTotal(setLocalTotal) {
   }, 100)
 }
 
-export default function handleChange(setTotal, setLocalTotal, expense, profit, setProfit) {
+export default function handleChange(setTotal, setLocalTotal, expense) {
   setLocalTotal(expense);
   getTotal(setTotal);
-  setProfit(profit - expense);
+  const income = document.getElementById('income').value
 }

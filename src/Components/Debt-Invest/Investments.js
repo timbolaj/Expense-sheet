@@ -5,7 +5,7 @@ import handleChange from '../../Helpers/handleChange';
 export default function Investments(props) {
 
   const [total, setLocalTotal] = useState(Number(0));
-  const { setTotal, setProfit, profit } = props;
+  const { setTotal, setProfit } = props;
 
   return (
     <div>
@@ -19,14 +19,14 @@ export default function Investments(props) {
         <tr>
           <td>Short-term</td>
           <Row
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, profit, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 
         <tr>
           <td>Long-term</td>
           <Row
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, profit, setProfit)}
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val)}
             total={total} />
         </tr>
 

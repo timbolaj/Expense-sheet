@@ -5,15 +5,17 @@ import '../../Styles/Expenses.scss';
 
 export default function Expenses(props) {
 
-  const { setTotal, setProfit, profit } = props;
+  const { setTotal, setProfit } = props;
 
   return (
     <div> 
       <h2>Expenses</h2>
 
       <div className="Expenses">
-        <Bills setTotal={setTotal} setProfit={setProfit} profit={profit}/>
-        <Fluctuates setTotal={setTotal} setProfit={setProfit} profit={profit}/>
+        <Bills setTotal={setTotal} setProfit={setProfit} 
+/>
+        <Fluctuates setTotal={setTotal} setProfit={setProfit} 
+/>
       </div>
     </div>
   )
