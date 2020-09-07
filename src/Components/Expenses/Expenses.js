@@ -14,16 +14,14 @@ export default function Expenses(props) {
       <div className="Expenses">
         <Bills
           setTotal={setTotal}
-          setProfit={setProfit}
-          
-          
-totalExpense={totalExpense}        />
+          setProfit={setProfit}        
+          totalExpense={totalExpense}
+        />
         <Fluctuates
           setTotal={setTotal}
           setProfit={setProfit}
-          
-          
-totalExpense={totalExpense}        />
+          totalExpense={totalExpense}
+        />
       </div>
     </div>
   )

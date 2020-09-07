@@ -19,55 +19,49 @@ export default function Fluctuates(props) {
         <tr>
           <td>Electricity</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            total={total}
+          />
         </tr>
 
         <tr>
           <td>Food</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            total={total}
+          />
         </tr>
 
         <tr>
           <td>Social</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            total={total}
+          />
         </tr>
 
         <tr>
           <td>Household needs</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+           total={total}
+          />
         </tr>
 
         <tr>
           <td>Transportation</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            total={total}
+          />
         </tr>
 
         <tr>
           <td>Other</td>
           <Row
-
-
-            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit, total)}
-            total={total} />
+            onChange={(val) => handleChange(setTotal, setLocalTotal, val, setProfit)}
+            total={total}
+          />
         </tr>
 
         <tr>

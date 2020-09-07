@@ -10,7 +10,7 @@ function getTotal(setTotal, setProfit, income) {
   }, 100)
 }
 
-export default function handleChange(setTotal, setLocalTotal, expense, setProfit, totalExpense) {
+export default function handleChange(setTotal, setLocalTotal, expense, setProfit) {
   let income = document.getElementById('income').value;
   if (!income) {
     income = 0;
